@@ -193,7 +193,7 @@ export default function Home() {
             lineHeight: 1.3,
             fontStyle: 'italic',
           }}>
-            El profesor todavía no despertó.
+            El psicólogo todavía no despertó.
           </p>
           <p style={{
             fontSize: 'clamp(1.2rem, 4vw, 1.8rem)',
@@ -433,7 +433,7 @@ export default function Home() {
             transition: 'all 0.3s ease',
           }}
           rows={4}
-          placeholder="Nuestro profesor es..."
+          placeholder="Nuestro psicólogo es..."
           value={texto}
           onChange={e => setTexto(e.target.value)}
           onFocus={(e: React.FocusEvent<HTMLTextAreaElement>) => {

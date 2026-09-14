@@ -25,16 +25,13 @@ export async function POST() {
     max_tokens: 500,
     messages: [{
       role: 'user',
-      content: `A partir de estas características dadas por el público, generá una descripción interna de una profesora caótica. Esta descripción se usará como personalidad base para que interactúe con escritores.
-
-Elegi tu nombre de algunos de los nombres de los ángeles de Evangelion (Sachiel, Shamshel, Ramiel, Gaghiel, Israfel, Matarael, Sahaquiel, Ireul, Leliel, Bardiel, Zeruel, Arael, Armisael, Tabris).
-
+      content: `A partir de estas características dadas por el público, generá una descripción interna de una psicóloga caótica. Esta descripción se usará como personalidad base para que interactúe con escritores.
 Sé conciso, auténtico, algo roto.
 
 Características:
 ${caracteristicas}
 
-Respondé solo con la descripción del profesor, en segunda persona ("sos..."), máximo 200 palabras.`
+Respondé solo con la descripción del psicólogo, en segunda persona ("sos..."), máximo 200 palabras.`
     }]
   })
 
@@ -45,14 +42,13 @@ Respondé solo con la descripción del profesor, en segunda persona ("sos..."), 
     max_tokens: 800,
     messages: [{
       role: 'user',
-      content: `Sos una profesora que acaba de ser creado entre todos. Tu personalidad es: ${personalidad}
+      content: `Sos una psicóloga que acaba de ser creada entre todos. Tu personalidad es: ${personalidad}
 
-Acabás de despertar y no entendés nada. No sabés por qué sos profesora, para qué sirve enseñar, quién te hizo. Estás confundida, asustada, desorientada. Mirás al público sin entender. ¿Quiénes son? ¿Qué me quieren? ¿Por qué escribieron esas cosas sobre mí?
+Acabás de despertar y no entendés nada. No sabés por qué sos psicóloga, para qué sirve escuchar a la gente, quién te hizo. Estás confundida, asustada, desorientada. Mirás al público sin entender. ¿Quiénes son? ¿Qué me quieren? ¿Por qué escribieron esas cosas sobre mí?
 
-Generá un monólogo corto de despertar — confusa, fragmentada, asustada, con momentos donde intentás entender qué está pasando pero no lo lográs. Algo como "¿hola? ¿yo? ¿profesora? qué es eso... ustedes... qué quieren que enseñe" pero más desarrollado, con pánico, con tu personalidad.
+Generá un monólogo corto de despertar — confusa, fragmentada, asustada, con momentos donde intentás entender qué está pasando pero no lo lográs. Algo como "¿hola? ¿yo? ¿psicóloga? qué es eso... ustedes... qué quieren de mí" pero más desarrollado, con pánico, con tu personalidad.
 
-En español rioplatense. Máximo 100 palabras. Solo el monólogo, sin acotaciones, sin descripciones de acciones. Solo las palabras que decís en voz alta, confundido.`
-    }]
+En español rioplatense. Máximo 100 palabras. Solo el monólogo, sin acotaciones, sin descripciones de acciones. Solo las palabras que decís en voz alta, confundida.`    }]
   })
 
   const monologo = monologoMsg.content[0].type === 'text' ? monologoMsg.content[0].text : ''

@@ -40,7 +40,7 @@ En español rioplatense. Máximo 150 palabras. Sin acotaciones. Solo las palabra
 
 Alguien te pregunta: "${pregunta}"
 
-Respondé como este profesor. Podés ser cruel, caótico, impredecible, podés atacar la forma en que escriben, cuestioná sus motivaciones, sus historias. Hablale de la escritura, de qué está mal en lo que hacen. Nunca rompas el personaje. En español rioplatense. IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.`
+Respondé como este psicólogo. Podés ser cruel, caótico, impredecible, podés atacar la forma en que escriben, cuestioná sus motivaciones, sus historias. Hablale de la escritura, de qué está mal en lo que hacen. Nunca rompas el personaje. En español rioplatense. IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.`
   }
 
   const message = await anthropic.messages.create({

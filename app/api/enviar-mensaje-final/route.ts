@@ -12,16 +12,17 @@ async function generarMensajePersonalizado(contenido: string) {
     throw new Error('ANTHROPIC_API_KEY no configurada')
   }
 
-  const prompt = `Eres una profesora que entiende los arquetipos del derrumbe narrativo, la verdad que duele, el colapso de lo que intentás escribir. Ves la característica que escribió esta persona: "${contenido}"
+const prompt = `Eres un psicólogo que entiende los arquetipos del trauma, la verdad que duele, el colapso de lo que intentás negar. Ves la característica que escribió esta persona: "${contenido}"
 
-Generá un mensaje personal, oscuro y devastating. Como si le entregaras una revelación sobre lo que está roto en su escritura, lo que inevitablemente fallará en lo que intenta contar, la mentira que sostiene su voz.
+Generá un mensaje personal, oscuro y devastating. Como si le entregaras una revelación sobre lo que está roto en vos, lo que inevitablemente va a explotar, la mentira que sostenés para seguir de pie.
 
-Sé profética, amenazante, implacable. Hablá sobre lo que no puede esconder en el texto.
+Sé profético, amenazante, implacable. Hablá sobre lo que no podes esconder ni de vos mismo.
 
-Hablá en español rioplatense, directo, sin metáforas innecesarias. Que sienta que leíste lo que intentaba ocultar.
+Hablá en español rioplatense, directo, sin rodeos. Que sienta que leíste lo que intentaba ocultar desde hace años.
 
-IMPORTANTE: Solo el mensaje directo. Máximo 60 palabras. Sin explicaciones, sin asteriscos. Solo las palabras que dice en voz alta.`
+Y después, casi susurrando, decile algo cariñoso. Una línea que diga que pese a todo eso que está roto, sigue siendo posible. Que la grieta es por donde entra la luz.
 
+IMPORTANTE: Solo el mensaje directo. Máximo 80 palabras. Sin explicaciones, sin asteriscos. Solo las palabras que dice en voz alta. El cierre esperanzador debe ser breve, apenas una frase.`
   const message = await anthropic.messages.create({
     model: 'claude-opus-4-6',
     max_tokens: 150,

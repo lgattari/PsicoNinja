@@ -312,7 +312,8 @@ Na, es una joda.
 
 No tengo nada y no va a pasar nada. No te preocupes. Hoy voy a morir, pero antes te voy a mandar un mail. (Mirá en SPAM). Y si no dejaste tu mail por cagón, hiciste bien. Pero al finalizar, volvé a abrir esta pantalla.
 
-Te vas a tener que enfrentar a tus pensamientos más oscuros. Esos de tu subconsciente.      </div>
+Te vas a tener que enfrentar a tus pensamientos más oscuros. Esos de tu subconsciente.
+</p>      </div>
       <style>{estilos}</style>
     </main>
   )

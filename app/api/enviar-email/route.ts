@@ -70,7 +70,7 @@ export async function POST(req: Request) {
           </div>
           <div style="padding:24px; color:#2f2a3d; line-height:1.6;">
             <p style="margin:0 0 16px; font-size:16px;">${mensajeHtml}</p>
-            <p style="margin:24px 0 0; font-size:15px; color:#6b5f7f;">Con cariño, La Profe</p>
+            <p style="margin:24px 0 0; font-size:15px; color:#6b5f7f;">Con cariño, La Psico</p>
           </div>
         </div>
       </div>

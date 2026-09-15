@@ -260,7 +260,7 @@ export default function Home() {
               fontStyle: 'italic',
               letterSpacing: '0.02em',
             }}>
-              Con cariño, La Profe
+              Con cariño, La Psico
             </p>
           </div>
         </div>
@@ -347,8 +347,7 @@ export default function Home() {
             letterSpacing: '0.02em',
             lineHeight: 1.3,
           }}>
-            ¿Cansado de tu profe de carne y hueso? 
-          </h1>
+Cansado de tu psico de siempre, vení a crear un psicólogo a medida. Le podes escribir a las 3am que no se enoja (bueno no sé) y que no se duerme. No tiene prejuicios, pero ojo por que no va a tener límites.          </h1>
         </div>
 
         <div style={{
@@ -364,7 +363,7 @@ export default function Home() {
             lineHeight: 1.7,
             fontStyle: 'italic',
           }}>
-            Creemos un profe a medida. No se cansa, que no se enoja (bueno no sé), que no se duerme. Que no tenga prejuicios. Que no tenga miedo. Que no tenga vergüenza. Que no tenga límites.
+            Creemos un psico a medida. No se cansa, que no se enoja (bueno no sé), que no se duerme. Que no tenga prejuicios. Que no tenga miedo. Que no tenga vergüenza. Que no tenga límites.
             Va a responder preguntas sobre escritura. Va a crecer. Va a aprender de ustedes.
           </p>
           <p style={{

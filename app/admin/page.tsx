@@ -363,7 +363,7 @@ export default function Admin() {
                 }
               }}
             >
-              {cargando ? 'invocando...' : 'invocar al profe'}
+              {cargando ? 'invocando...' : 'invocar al psico'}
             </button>
           )}
 
@@ -383,7 +383,7 @@ export default function Admin() {
                 margin: 0,
                 fontStyle: 'italic',
               }}>
-                ✦ La profe está despierta ✦
+                ✦ La psico está despierta ✦
               </p>
 
               <textarea
@@ -400,7 +400,7 @@ export default function Admin() {
                   resize: 'none',
                 }}
                 rows={2}
-                placeholder="hacele una pregunta al Profe..."
+                placeholder="hacele una pregunta al Psico..."
                 value={preguntaCustom}
                 onChange={e => setPreguntaCustom(e.target.value)}
                 onFocus={(e: React.FocusEvent<HTMLTextAreaElement>) => {

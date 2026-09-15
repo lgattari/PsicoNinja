@@ -384,7 +384,6 @@ Pero antes necesitamos saber una cosa:
 ¿Menos prejuicios?
 ¿Una manía?
 ¿Una obsesión?
-            Disparará algunas de las verdades más verdaderas. Después muere.
           </p>
         </div>
 
@@ -396,8 +395,7 @@ Pero antes necesitamos saber una cosa:
           letterSpacing: '0.05em',
           lineHeight: 1.6,
         }}>
-          
-            Disparará algunas de las verdades más verdaderas. Después morira.
+            Nacerá, disparará algunas de las verdades más verdaderas y después morirá.
         </p>
 
         <input

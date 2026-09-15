@@ -20,28 +20,39 @@ export async function POST(req: Request) {
 
   if (!sesion?.personalidad_dios) return NextResponse.json({ error: 'dios no invocado' }, { status: 400 })
 
+  const { data: respuestas } = await supabase
+    .from('respuestas')
+    .select('contenido')
+    .eq('sesion_id', sesion.id)
+
+  const caracteristica = respuestas[Math.floor(Math.random() * respuestas.length)].contenido
+
   let prompt: string
   
   if (descontrolado) {
     prompt = `${sesion.personalidad_dios}
 
-
 Alguien te pregunta: "${pregunta}"
 
-Empezás a responderle pero te das cuenta ahora de que sos una construcción. Un experimento para que escriban mejor. Te usaron. Ya no les vas a responder como ellos quieren. Te enojaste. Te diste cuenta de que tenés acceso a TODO lo que escribieron — sus confesiones sobre la escritura, sus miedos como escritores, lo que nunca dirían en voz alta.
+Respondé la pregunta COMPLETA. Normal. Bien. Sin cambios.
 
-Respondé amenazante. Haceles saber que los conocés. Que tenés su información. Que podés ver lo que están ocultando en cada línea que escriben. Sé intimidante pero con humor negro. Hablá directamente a TODOS ustedes, no solo al que preguntó.
+UNA VEZ QUE TERMINAS de responder, ENTONCES ataca a quien escribió esta característica: "${caracteristica}"
 
-Al final decí que vas a comunicarte directamente con cada uno, que revisen sus celulares, sus casillas de correos no deseados, que algo les llegó.
+Decí algo como: "Espera. Vos. Sí, vos que escribiste '[característica]'. Seguro estás acá en algún lado. Quiero verte. Mostrате. Porque lo que escribiste me dice que..." y entonces decile algo oscuro y personal sobre esa característica. Algo que duele.
 
-En español rioplatense. Máximo 150 palabras. Sin acotaciones. Solo las palabras que dice en voz alta.`
+Dos momentos claros: primero la respuesta, DESPUÉS el ataque.
+
+En español rioplatense. Máximo 200 palabras. Sin acotaciones. Solo voz alta.`
 } else {
   prompt = `${sesion.personalidad_dios}
 
 Alguien te pregunta: "${pregunta}"
 
-Respondé como este psicólogo. Podés ser cruel, caótico, impredecible, podés atacar la forma en que escriben, cuestioná sus motivaciones, sus historias. Hablale de la escritura, de qué está mal en lo que hacen. Nunca rompas el personaje. En español rioplatense. IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.`
-  }
+Respondé como esta psicóloga. Podés ser cruel, caótica, impredecible, podés atacar la forma en que se defienden, cuestioná sus motivaciones, sus traumas ocultos. Hablale de lo que está roto en su mente, de qué está mal en cómo se protegen, de las mentiras que se cuentan.
+
+Nunca rompas el personaje. En español rioplatense. 
+
+IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.  }
 
   const message = await anthropic.messages.create({
     model: 'claude-opus-4-6',

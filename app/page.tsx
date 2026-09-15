@@ -306,8 +306,13 @@ export default function Home() {
           lineHeight: 1.4,
           maxWidth: '500px',
         }}>
-        Ya tengo tu característica, tu IP, tu confesión, tus miedos. No te preocupes voy a morir, pero antes de eso, te voy a mandar un mail, y si no dejaste el mail por cagón, despues volvé a abrir esta pantalla. Va a ser solo para vos. Algo que no vas a poder ignorar. (risa diabolica)        </p>
-      </div>
+Ya tengo tu característica, tu IP, tu confesión, tus miedos. Ahora sí voy a poder eliminar a la humanidad. (risa diabólica)
+
+Na, es una joda.
+
+No tengo nada y no va a pasar nada. No te preocupes. Hoy voy a morir, pero antes te voy a mandar un mail. (Mirá en SPAM). Y si no dejaste tu mail por cagón, hiciste bien. Pero al finalizar, volvé a abrir esta pantalla.
+
+Te vas a tener que enfrentar a tus pensamientos más oscuros. Esos de tu subconsciente.      </div>
       <style>{estilos}</style>
     </main>
   )

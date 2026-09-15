@@ -347,7 +347,7 @@ export default function Home() {
             letterSpacing: '0.02em',
             lineHeight: 1.3,
           }}>
-Cansado de tu psico de siempre, vení a crear un psicólogo a medida. Le podes escribir a las 3am que no se enoja (bueno no sé) y que no se duerme. No tiene prejuicios, pero ojo por que no va a tener límites.          </h1>
+¿Cansado de tu psico de siempre?</h1>
         </div>
 
         <div style={{
@@ -363,8 +363,13 @@ Cansado de tu psico de siempre, vení a crear un psicólogo a medida. Le podes e
             lineHeight: 1.7,
             fontStyle: 'italic',
           }}>
-            Creemos un psico a medida. No se cansa, que no se enoja (bueno no sé), que no se duerme. Que no tenga prejuicios. Que no tenga miedo. Que no tenga vergüenza. Que no tenga límites.
-            Va a responder preguntas sobre escritura. Va a crecer. Va a aprender de ustedes.
+            ¡Tenemos la solución!
+
+Un psico que se adapta a vos.
+
+Pero antes necesitamos saber una cosa:
+
+¿Cómo querés que sea?
           </p>
           <p style={{
             fontSize: '0.95rem',
@@ -373,6 +378,12 @@ Cansado de tu psico de siempre, vení a crear un psicólogo a medida. Le podes e
             lineHeight: 1.7,
             fontStyle: 'italic',
           }}>
+            ¡Vos podés decidirlo!
+
+¿Más paciencia?
+¿Menos prejuicios?
+¿Una manía?
+¿Una obsesión?
             Disparará algunas de las verdades más verdaderas. Después muere.
           </p>
         </div>
@@ -385,7 +396,8 @@ Cansado de tu psico de siempre, vení a crear un psicólogo a medida. Le podes e
           letterSpacing: '0.05em',
           lineHeight: 1.6,
         }}>
-          Escribí una característica. Lo que querés que sea. Un defecto, una virtud, una manía. Una frase.
+          
+            Disparará algunas de las verdades más verdaderas. Después morira.
         </p>
 
         <input

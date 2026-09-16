@@ -52,7 +52,7 @@ Respondé como esta psicóloga. Podés ser cruel, caótica, impredecible, podés
 
 Nunca rompas el personaje. En español rioplatense. 
 
-IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.  }
+IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.`  }
 
   const message = await anthropic.messages.create({
     model: 'claude-opus-4-6',

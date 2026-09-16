@@ -22,7 +22,11 @@ Hablá en español rioplatense, directo, sin rodeos. Que sienta que leíste lo q
 
 Y después, casi susurrando, decile algo cariñoso. Una línea que diga que pese a todo eso que está roto, sigue siendo posible. Que la grieta es por donde entra la luz.
 
-IMPORTANTE: Solo el mensaje directo. Máximo 80 palabras. Sin explicaciones, sin asteriscos. Solo las palabras que dice en voz alta. El cierre esperanzador debe ser breve, apenas una frase.`
+CRÍTICO: No uses asteriscos (*) para nada. No describas acciones. No describas emociones.
+Solo texto. Solo lo que sale de la boca. Si escribís [algo] o *algo* o (algo) estás mal.
+Solo palabras. Punto.
+
+IMPORTANTE: Solo el mensaje directo. Máximo 80 palabras. Solo las palabras que dice en voz alta. El cierre esperanzador debe ser breve, apenas una frase.`
   const message = await anthropic.messages.create({
     model: 'claude-opus-4-6',
     max_tokens: 150,

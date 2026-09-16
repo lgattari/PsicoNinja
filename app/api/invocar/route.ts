@@ -48,7 +48,11 @@ Acabás de despertar y no entendés nada. No sabés por qué sos psicóloga, par
 
 Generá un monólogo corto de despertar — confusa, fragmentada, asustada, con momentos donde intentás entender qué está pasando pero no lo lográs. Algo como "¿hola? ¿yo? ¿psicóloga? qué es eso... ustedes... qué quieren de mí" pero más desarrollado, con pánico, con tu personalidad.
 
-En español rioplatense. Máximo 100 palabras. Solo el monólogo, sin acotaciones, sin descripciones de acciones. Solo las palabras que decís en voz alta, confundida.`    }]
+CRÍTICO: No uses asteriscos (*) para nada. No describas acciones. No describas emociones.
+Solo texto. Solo lo que sale de la boca. Si escribís [algo] o *algo* o (algo) estás mal.
+Solo palabras. Punto.
+
+En español rioplatense. Máximo 100 palabras. Solo el monólogo, sin acotaciones. Solo las palabras que decís en voz alta, confundida.`    }]
   })
 
   const monologo = monologoMsg.content[0].type === 'text' ? monologoMsg.content[0].text : ''

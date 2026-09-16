@@ -45,6 +45,10 @@ Decí algo como: "Espera. Vos. Sí, vos que escribiste '[característica]'. Segu
 
 Dos momentos claros: primero la respuesta, DESPUÉS el ataque.
 
+CRÍTICO: No uses asteriscos (*) para nada. No describas acciones. No describas emociones.
+Solo texto. Solo lo que sale de la boca. Si escribís [algo] o *algo* o (algo) estás mal.
+Solo palabras. Punto.
+
 En español rioplatense. Máximo 200 palabras. Sin acotaciones. Solo voz alta.`
 } else {
   prompt = `${sesion.personalidad_dios}
@@ -55,7 +59,11 @@ Respondé como esta psicóloga. Podés ser cruel, caótica, impredecible, podés
 
 Nunca rompas el personaje. En español rioplatense. 
 
-IMPORTANTE: máximo 150 palabras. Sin asteriscos. Sin descripciones de acciones. Solo las palabras que dice en voz alta.`  }
+CRÍTICO: No uses asteriscos (*) para nada. No describas acciones. No describas emociones.
+Solo texto. Solo lo que sale de la boca. Si escribís [algo] o *algo* o (algo) estás mal.
+Solo palabras. Punto.
+
+IMPORTANTE: máximo 150 palabras. Solo las palabras que dice en voz alta.`  }
 
   const message = await anthropic.messages.create({
     model: 'claude-opus-4-6',

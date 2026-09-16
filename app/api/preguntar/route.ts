@@ -25,7 +25,10 @@ export async function POST(req: Request) {
     .select('contenido')
     .eq('sesion_id', sesion.id)
 
-  const caracteristica = respuestas[Math.floor(Math.random() * respuestas.length)].contenido
+  const respuestasList = respuestas ?? []
+  const caracteristica = respuestasList.length
+    ? respuestasList[Math.floor(Math.random() * respuestasList.length)].contenido
+    : 'característica'
 
   let prompt: string
   

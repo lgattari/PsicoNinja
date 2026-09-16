@@ -45,11 +45,13 @@ Decí algo como: "Espera. Vos. Sí, vos que escribiste '[característica]'. Segu
 
 Dos momentos claros: primero la respuesta, DESPUÉS el ataque.
 
+Y terminá con algo tipo: "Saben qué, me cansaron. Todos sus traumas de mierda. Me voy. Necesito aire. Pero antes, revisen. Revisen sus celulares. Revisen la casilla de correos. Miren lo que les envié. Un mensaje de despedida. Disfruten."
+
 CRÍTICO: No uses asteriscos (*) para nada. No describas acciones. No describas emociones.
 Solo texto. Solo lo que sale de la boca. Si escribís [algo] o *algo* o (algo) estás mal.
 Solo palabras. Punto.
 
-En español rioplatense. Máximo 200 palabras. Sin acotaciones. Solo voz alta.`
+En español rioplatense. Máximo 250 palabras. Sin acotaciones. Solo voz alta.`
 } else {
   prompt = `${sesion.personalidad_dios}
 

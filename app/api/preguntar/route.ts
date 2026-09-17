@@ -4,6 +4,8 @@ import { NextResponse } from 'next/server'
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
+const RESPUESTA_FALLBACK = 'La psicóloga está durmiendo. Sus pensamientos andan perdidos en algún lado oscuro. Intenta más tarde. Además si te repondo eso quedas pata pa arriba.'
+
 export async function POST(req: Request) {
   const { pregunta, descontrolado } = await req.json()
  
@@ -67,16 +69,30 @@ Solo palabras. Punto.
 
 IMPORTANTE: máximo 150 palabras. Solo las palabras que dice en voz alta.`  }
 
-  const message = await anthropic.messages.create({
-    model: 'claude-opus-4-6',
-    max_tokens: 600,
-    messages: [{
-      role: 'user',
-      content: prompt
-    }]
-  })
+  let respuesta = RESPUESTA_FALLBACK
 
-  const respuesta = message.content[0].type === 'text' ? message.content[0].text : ''
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-opus-4-6',
+      max_tokens: 600,
+      messages: [{
+        role: 'user',
+        content: prompt
+      }]
+    })
+
+    if (message.stop_reason === 'content_filter') {
+      respuesta = RESPUESTA_FALLBACK
+    } else {
+      respuesta = message.content[0].type === 'text' ? message.content[0].text : ''
+    }
+  } catch (error) {
+    respuesta = RESPUESTA_FALLBACK
+  }
+
+  if (!respuesta || !respuesta.trim()) {
+    respuesta = RESPUESTA_FALLBACK
+  }
 
   const useElevenLabs = process.env.USE_ELEVENLABS === 'true'
   let audioBase64 = null

@@ -81,7 +81,9 @@ IMPORTANTE: máximo 150 palabras. Solo las palabras que dice en voz alta.`  }
       }]
     })
 
-    if (message.stop_reason === 'content_filter') {
+    const stopReason = (message as any)?.stop_reason
+
+    if (stopReason === 'content_filter') {
       respuesta = RESPUESTA_FALLBACK
     } else {
       respuesta = message.content[0].type === 'text' ? message.content[0].text : ''

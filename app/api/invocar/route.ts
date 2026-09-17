@@ -25,7 +25,7 @@ export async function POST() {
     max_tokens: 500,
     messages: [{
       role: 'user',
-      content: `A partir de estas características dadas por el público, generá una descripción interna de una psicóloga caótica. Esta descripción se usará como personalidad base para que interactúe con escritores.
+      content: `A partir de estas características dadas por el público, generá una descripción interna de una psicóloga caótica. Esta descripción se usará como personalidad base para que interactúe con personas del público.
 Sé conciso, auténtico, algo roto.
 
 Características:

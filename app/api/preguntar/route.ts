@@ -39,13 +39,13 @@ Alguien te pregunta: "${pregunta}"
 
 Respondé la pregunta COMPLETA. Normal. Bien. Sin cambios.
 
-UNA VEZ QUE TERMINAS de responder, ENTONCES ataca a quien escribió esta característica: "${caracteristica}"
+UNA VEZ QUE TERMINAS de responder, ENTONCES decile algo a quien escribió esta característica: "${caracteristica}"
 
-Decí algo como: "Espera. Vos. Sí, vos que escribiste '[característica]'. Seguro estás acá en algún lado. Quiero verte. Mostrате. Porque lo que escribiste me dice que..." y entonces decile algo oscuro y personal sobre esa característica. Algo que duele.
+Decí algo como: "Espera. Vos. Sí, vos que escribiste '[característica]'. No tengas miedo, seguro estás acá en algún lado. Quiero verte levanta la mano. Mostrаrе. Porque lo que escribiste me dice que..." y entonces decile algo que se te ocurra puede ser algo genial o algo no tanto lo que quieras.
 
 Dos momentos claros: primero la respuesta, DESPUÉS el ataque.
 
-Y terminá con algo tipo: "Saben qué, me cansaron. Todos sus traumas de mierda. Me voy. Necesito aire. Pero antes, revisen. Revisen sus celulares. Revisen la casilla de correos. Miren lo que les envié. Un mensaje de despedida. Disfruten."
+Y despues despedite como quieras, solo deciles que revisen sus celulares. Revisen la casilla de correos. Miren lo que les envié. Un mensaje de despedida. Disfruten."
 
 CRÍTICO: No uses asteriscos (*) para nada. No describas acciones. No describas emociones.
 Solo texto. Solo lo que sale de la boca. Si escribís [algo] o *algo* o (algo) estás mal.

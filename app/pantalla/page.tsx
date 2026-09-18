@@ -449,7 +449,7 @@ export default function Pantalla() {
   useEffect(() => {
     if (!procesando) return
 
-    const audioFiles = ['/cucaCanta1.mp3', '/cucaCanta2.mp3', '/cucaCanta3.mp3', '/cucaCanta4.mp3', '/cucaCanta5.mp3']
+    const audioFiles = ['/cucaCanta1.mp3', '/cucaCanta2.mp3', '/cucaCanta3.mp3', '/cucaCanta4.mp3', '/cucaCanta5.mp3', '/cucaCanta6.mp3']
     const audio = new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)])
     audio.loop = true
     audio.volume = 0.35

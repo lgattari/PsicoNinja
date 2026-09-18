@@ -501,7 +501,6 @@ Que diga siempre "mira que interesante"
         >
           {cargando ? 'escribiendo...' : 'agregar característica'}
         </button>
-
         <p style={{
           fontSize: '0.85rem',
           color: 'rgba(200,150,255,0.5)',

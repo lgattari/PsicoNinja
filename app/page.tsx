@@ -4,7 +4,7 @@ import { supabase } from '../lib/supabase'
 
 export default function Home() {
   const [texto, setTexto] = useState('')
-  const [email, setEmail] = useState('')
+  // const [email, setEmail] = useState('')
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [enviado, setEnviado] = useState(false)
   const [cargando, setCargando] = useState(false)
@@ -132,7 +132,7 @@ export default function Home() {
   async function enviar() {
     if (!texto.trim() || !userId) return
 
-    const emailParaGuardar = email.trim() || null
+    // const emailParaGuardar = email.trim() || null
 
     if (!audioRef.current) {
       audioRef.current = new Audio('/notif.mp3')
@@ -151,10 +151,10 @@ export default function Home() {
     await fetch('/api/respuesta', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contenido: texto, userId, email: emailParaGuardar }),
+      body: JSON.stringify({ contenido: texto, userId /*, email: emailParaGuardar */ }),
     })
     setTexto('')
-    setEmail('')
+    // setEmail('')
     setEnviado(true)
     setCargando(false)
   }
@@ -313,7 +313,7 @@ Ya tengo tu característica, tu IP, tu confesión, tus miedos. Ahora sí voy a p
 
 Na, es una joda.
 
-No tengo nada y no va a pasar nada. No te preocupes. Además hoy voy a morir, pero antes te voy a mandar un mail. (Mirá en SPAM). Y si no dejaste tu mail por cauteloso, hiciste bien. Pero al finalizar, volvé a abrir esta pantalla.
+No tengo nada y no va a pasar nada. No te preocupes. Además hoy voy a morir, pero antes te voy a mandar un mensaje, eso si, acordate de volver a abrir esta pantalla.
 
 Te vas a tener que enfrentar a tus pensamientos. Esos de tu subconsciente.
 </p>      </div>
@@ -408,7 +408,7 @@ Que diga siempre "mira que interesante"
             Nacerá, disparará algunas de las verdades más verdaderas y después morirá.
         </p>
 
-        <input
+        {/* <input
           type="email"
           style={{
             width: '100%',
@@ -435,7 +435,7 @@ Que diga siempre "mira que interesante"
             target.style.backgroundColor = 'rgba(200,150,255,0.05)'
             target.style.borderColor = 'rgba(200,150,255,0.3)'
           }}
-        />
+        /> */}
 
         <textarea
           style={{

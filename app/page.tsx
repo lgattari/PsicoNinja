@@ -356,7 +356,7 @@ Te vas a tener que enfrentar a tus pensamientos. Esos de tu subconsciente.
             letterSpacing: '0.02em',
             lineHeight: 1.3,
           }}>
-¿Cansado de tu psico de siempre?</h1>
+¿Seré mejor que tu Psicólogo?</h1>
         </div>
 
         <div style={{
@@ -372,9 +372,9 @@ Te vas a tener que enfrentar a tus pensamientos. Esos de tu subconsciente.
             lineHeight: 1.7,
             fontStyle: 'italic',
           }}>
-            ¡Tenemos la solución!
+            Te prometo ser un 
 
-Un psico que se adapta a vos.
+un psico que se adapta a vos.
 
 Pero antes necesitamos saber una cosa:
 
@@ -405,7 +405,7 @@ Que diga siempre "mira que interesante"
           letterSpacing: '0.05em',
           lineHeight: 1.6,
         }}>
-            Nacerá, disparará algunas de las verdades más verdaderas y después morirá.
+            Voy a nacer, dispararé algunas de las verdades más verdaderas y después moriré.
         </p>
 
         {/* <input
@@ -509,7 +509,7 @@ Que diga siempre "mira que interesante"
           textTransform: 'uppercase',
           letterSpacing: '0.1em',
         }}>
-          Una característica por vez. Entre todos, lo armamos.
+          Una característica por vez. Entre todos, me arman.
         </p>
       </div>
 

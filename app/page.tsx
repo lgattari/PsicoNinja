@@ -452,7 +452,7 @@ Que diga siempre "mira que interesante"
             transition: 'all 0.3s ease',
           }}
           rows={4}
-          placeholder="Nuestro psicólogo es..."
+          placeholder="Meté un característica"
           value={texto}
           onChange={e => setTexto(e.target.value)}
           onFocus={(e: React.FocusEvent<HTMLTextAreaElement>) => {

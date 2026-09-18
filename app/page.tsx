@@ -13,6 +13,19 @@ export default function Home() {
   const [mensajePersonalizado, setMensajePersonalizado] = useState<string>('')
   const [mostrarMensaje, setMostrarMensaje] = useState(false)
   const [preguntasHabilitadas, setPreguntasHabilitadas] = useState(true)
+  const notificationSounds = ['/cuca1.mp3', '/cuca2.mp3', '/cuca3.mp3', '/cuca4.mp3']
+
+  const reproducirSonidoAleatorio = async () => {
+    const source = notificationSounds[Math.floor(Math.random() * notificationSounds.length)]
+    const audio = new Audio(source)
+    audioRef.current = audio
+
+    try {
+      await audio.play()
+    } catch (e) {
+      console.error('Error reproduciendo audio:', e)
+    }
+  }
 
   // Generar o recuperar userId
   useEffect(() => {
@@ -104,17 +117,7 @@ export default function Home() {
 
           if (respuesta?.mensaje_personalizado) {
             setMensajePersonalizado(respuesta.mensaje_personalizado)
-            
-            try {
-              if (!audioRef.current) {
-                audioRef.current = new Audio('/notif.mp3')
-              }
-              audioRef.current.currentTime = 0
-              await audioRef.current.play()
-            } catch (e) {
-              console.error('Error reproduciendo audio:', e)
-            }
-            
+            await reproducirSonidoAleatorio()
             setMostrarMensaje(true)
           }
         }

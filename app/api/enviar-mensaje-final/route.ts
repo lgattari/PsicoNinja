@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server'
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
-const MENSAJE_FALLBACK = 'Gracias por tu participación. Tu característica quedó registrada y este mensaje llega como un cierre.'
+const MENSAJE_FALLBACK = 'La psicóloga está durmiendo. Sus pensamientos andan perdidos en algún lado oscuro. Intenta más tarde. Además si te repondo eso quedas pata pa arriba.'
 
 async function generarMensajePersonalizado(contenido: string) {
   if (!process.env.ANTHROPIC_API_KEY) {
